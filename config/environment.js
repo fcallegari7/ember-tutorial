@@ -18,6 +18,7 @@ module.exports = function (environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
+    MAPBOX_ACCESS_TOKEN: process.env.MAPBOX_ACCESS_TOKEN
   };
 
   if (environment === 'development') {
@@ -43,8 +44,6 @@ module.exports = function (environment) {
   if (environment === 'production') {
     // here you can enable a production-specific feature
   }
-
-  ENV.MAPBOX_ACCESS_TOKEN = process.env.MAPBOX_ACCESS_TOKEN;
 
   return ENV;
 };
