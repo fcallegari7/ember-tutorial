@@ -329,10 +329,23 @@ p {
 
 .rental h3 {
   flex-basis: 100%;
+  display: flex;
 }
 
 .rental h3 a {
   display: inline;
+}
+
+.rental .detail.avatar {
+  flex-basis: 8%;
+  span {
+    background: #016aba;
+    color: white;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    width: 28px;
+  }
 }
 
 .rental .detail {

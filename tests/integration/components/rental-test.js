@@ -30,7 +30,7 @@ module('Integration | Component | rental', function (hooks) {
     await render(hbs`<Rental @rental={{this.rental}} />`);
 
     assert.dom('article').hasClass('rental');
-    assert.dom('article h3').hasText('Grand Old Mansion');
+    assert.dom('article h3').hasText('G Grand Old Mansion');
     assert.dom('article .detail.owner').includesText('Veruca Salt');
     assert.dom('article .detail.type').includesText('Standalone');
     assert.dom('article .detail.location').includesText('San Francisco');

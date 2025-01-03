@@ -9,7 +9,6 @@ export default class RentalRoute extends Route {
         const { content } = await this.store.request(
           findRecord('rental', params.rental_id),
         );
-        console.log(content.data)
         return content.data;
     }
 }

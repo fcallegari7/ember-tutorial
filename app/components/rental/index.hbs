@@ -5,6 +5,7 @@
     />
   <div class="details">
     <h3>
+      <Rental::Avatar @title={{@rental.title}} />
       <LinkTo @route="rental" @model={{@rental}}>
         {{@rental.title}}
       </LinkTo>
