@@ -6,13 +6,13 @@ export default class Rentals extends Component {
   @tracked query = '';
 
   @action
-  updateQuery(event) {
-    let formData = new FormData(event.currentTarget);
-    this.query = formData.get('rental-search-term');
+  updateQuery(event: Event) {
+    let formData = new FormData(event.currentTarget as HTMLFormElement);
+    this.query = formData.get('rental-search-term') as string;
   }
 
   @action
-  handleSubmit(event) {
+  handleSubmit(event: Event) {
     event.preventDefault();
     this.updateQuery(event);
   }

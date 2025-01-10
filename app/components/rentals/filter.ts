@@ -1,6 +1,12 @@
 import Component from '@glimmer/component';
+import { type Rental } from '../../../types/common';
 
-export default class RentalsFilter extends Component {
+type RentalsFilterArgs = {
+  rentals: Rental[];
+  query: string;
+}
+
+export default class RentalsFilter extends Component<RentalsFilterArgs> {
   get results() {
     let { rentals, query } = this.args;
 
