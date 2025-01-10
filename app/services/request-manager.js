@@ -2,10 +2,13 @@ import BaseRequestManager from '@ember-data/request';
 import Fetch from '@ember-data/request/fetch';
 import { JsonSuffixHandler } from 'super-rentals/utils/handlers';
 
-export default class RequestManager extends BaseRequestManager {
-  constructor(args) {
-    super(args);
+interface RequestManagerArgs {
+  use: any[];
+}
 
+export default class RequestManager extends BaseRequestManager {
+  constructor(args: RequestManagerArgs) {
+    super(args);
     this.use([JsonSuffixHandler, Fetch]);
   }
 }
