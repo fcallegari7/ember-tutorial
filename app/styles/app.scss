@@ -1,3 +1,5 @@
+@use 'base';
+
 /* stylelint-disable no-descending-specificity, media-feature-range-notation */
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,700italic");
 
@@ -32,7 +34,7 @@ body {
 }
 
 a {
-  color: #016aba;
+  color: base.$primary-color;
   text-decoration: none;
 }
 
@@ -53,7 +55,7 @@ p {
   padding: 10px 30px;
   text-decoration: none;
   color: #fff;
-  background: #016aba;
+  background: base.$primary-color;
   border-radius: 5px;
   border: none;
   font-size: 20px;
@@ -281,7 +283,7 @@ p {
   margin: -20px;
   padding: 20px;
   border-radius: 5px;
-  background: #016aba;
+  background: base.$primary-color;
   opacity: 0;
   transition: opacity 0.25s ease-in-out;
 }
@@ -305,7 +307,7 @@ p {
   margin-top: 5px;
   margin-bottom: -15px;
   text-align: center;
-  color: #016aba;
+  color: base.$primary-color;
 
   /* This is needed to fix a safari clipping issue */
   position: relative;
@@ -339,7 +341,7 @@ p {
 .rental .detail.avatar {
   flex-basis: 8%;
   span {
-    background: #016aba;
+    background: base.$primary-color;
     color: white;
     display: block;
     text-align: center;
